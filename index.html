@@ -1,0 +1,37 @@
+<html>
+
+<head>
+    <title>Sokoban</title>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="css/myStyle.css">
+</head>
+
+<body onload="initGame()" onkeyup="keyClicked(event)" style="text-align: center;">
+
+    <h1>Sokoban</h1>
+
+    <div>
+        <h3>steps count: <span id="spanStepsCount"></span> </h3>
+    </div>
+    <div>
+        <h3>boxes in storage: <span id="spanBoxsCount"></span> </h3>
+    </div>
+    <div class="userMsg">The gamer Need to move all the boxes to storage locations</div>
+
+    <table class="gameTable" >
+        <tbody class="gameBoard"></tbody>
+    </table>
+
+    <!--<div class="buttons">
+        <button class="button" onclick="leftArrowClicked()">&lArr;</button> 
+        <button class="button" onclick="upArrowClicked()">&uArr;</button> 
+        <button class="button" onclick="rightArrowClicked()">&rArr;</button>                
+        <button class="button" onclick="downArrowClicked()">&dArr;</button>                
+    </div>-->
+
+    <button class="restart" onclick="initGame()">Restart Game</button>
+    <script src="js/utils.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
