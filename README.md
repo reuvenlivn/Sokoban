@@ -1,1 +1,3 @@
 "# Sokoban" 
+
+click on index.html and play.....
